@@ -13,10 +13,10 @@
   </head>
   <body>
     <div class="status-bar">
-      <div class="status-bar__column1">
+      <div class="status-bar__column">
         <span class="status-bar__clock">13:53</span>
       </div>
-      <div class="status-bar__column2">
+      <div class="status-bar__column">
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
@@ -25,10 +25,10 @@
       </div>
     </div>
     <header class="header">
-      <div class="header__column1">
-        <h1>채팅</h1>
+      <div class="header__column">
+        <h1 class="header__title">채팅</h1>
       </div>
-      <div class="header__column2">
+      <div class="header__column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
@@ -41,23 +41,24 @@
         <!-- 이 아이콘들은 간격을 맞춰주기 위해 span으로 묶음. -->
       </div>
     </header>
-    <main class="chat">
-      <ul class="chat__list">
-        <li class="chat__box">
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats__list-chat chat">
           <a href="chat.html">
-            <div class="chat__box-columns">
-              <div class="chat__box-column1">
-                <img src="images/cat.jpg" class="m-avatar friend__avatar" />
-                <div class="box-column1__content">
-                  <span class="friend__name">
+            <div class="chats__chat">
+              <div class="chat__column">
+                <img src="images/cat.jpg" class="chat__avatar" />
+                <div class="chat__text">
+                  <span class="chat__name">
                     현태형
                   </span>
-                  <span class="friend__bottom-text">
+                  <span class="chat__bottom-text">
                     술묵자아
                   </span>
                 </div>
               </div>
-              <div class="chat__box-column2">
+
+              <div class="chat__column">
                 <span class="chat__timestamp">
                   어제
                 </span>
