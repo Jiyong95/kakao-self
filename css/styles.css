@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Comic+Neue:400,700i|Nanum+Pen+Script&display=swap&subset=korean");
 @import "reset.css";
 @import "status-bar.css";
+@import "header.css";
 
 body {
   font-family: "Comic Neue", "Nanum Pen Script", cursive, -apple-system,
@@ -9,4 +10,12 @@ body {
   background-color: #ffffff;
   color: #1a1a1a;
   padding: 10px 20px;
+}
+
+a {
+  color: black;
+}
+
+img {
+  height: 30px;
 }

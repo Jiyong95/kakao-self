@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header .header__title {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.header .header__icon {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* chat.html에 해당되는 부분. */
+.header .header__column1 {
+  display: flex;
+  align-items: center;
+  /* chat.html icon과 text 한 줄에 놓기위해. */
+}
+
+.header .header__back-btn {
+  margin-right: 20px;
+  font-size: 20px;
+}
