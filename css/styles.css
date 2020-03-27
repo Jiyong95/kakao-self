@@ -2,6 +2,17 @@
 @import "reset.css";
 @import "status-bar.css";
 @import "header.css";
+@import "nav-bar.css";
+
+* {
+  box-sizing: border-box;
+  /* 매우 중요함 
+  padding이 추가되어도 기존 크기는 고정.
+
+  설정안해주면 padding에 의해 박스크기가 커져
+  화면 밖으로 더 커져서 안보일 수도 있음.
+  */
+}
 
 body {
   font-family: "Comic Neue", "Nanum Pen Script", cursive, -apple-system,
