@@ -3,6 +3,7 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "index.css";
 
 * {
   box-sizing: border-box;
@@ -25,8 +26,6 @@ body {
 
 a {
   color: black;
-}
-
-img {
-  height: 30px;
+  text-decoration: none;
+  /* 링크 밑줄 없애줌. */
 }

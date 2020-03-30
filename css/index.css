@@ -1,0 +1,84 @@
+.chat {
+  margin-bottom: 30px;
+}
+.chat .chat__link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat__avatar {
+  width: 60px;
+  border-radius: 40%;
+}
+.chat__column1 {
+  position: relative;
+}
+.chat__avatar1 {
+  width: 39px;
+}
+
+.chat__avatar2 {
+  position: absolute;
+  width: 39px;
+  top: 20px;
+  left: 20px;
+}
+
+.chat__column1 {
+  display: flex;
+  align-items: center;
+}
+
+.chat__column1 .chat__text.text1 {
+  padding-left: 21px;
+  font-size: 20px;
+}
+
+.chat__column1 .chat__text {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.chat__top-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat__man-num {
+  font-size: 16px;
+  opacity: 0.4;
+  margin-left: 5px;
+}
+
+.chat__text .chat__bottom-text {
+  display: block;
+  margin-top: 5px;
+  opacity: 0.4;
+  font-size: 16px;
+}
+
+.chat__timestamp {
+  opacity: 0.4;
+  display: block;
+  font-size: 12px;
+}
+
+.chat__column2 {
+  position: relative;
+}
+
+.chat__num {
+  position: absolute;
+  color: white;
+  background-color: #e65f3f;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 13px;
+  right: 0px;
+  margin-top: 5px;
+}
