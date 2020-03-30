@@ -14,3 +14,28 @@
 .nav i {
   font-size: 20px;
 }
+
+.nav .nav__link {
+  position: relative;
+}
+/* nav__badge부모인 nav__link에 relative를 해줌으로써
+nav__bagge의 position이 부모를 기준으로  형성됨.
+a태그의 범위는 i콘의 범위.*/
+
+.nav__link .nav__badge {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  color: white;
+  background-color: #e65f3f;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; 
+  text-align은 y축으로 가운데를 맞춰줌.
+  따라서 justify, align으로 정확히 x축 y축 맞춰줌.*/
+  border-radius: 50%;
+  font-size: 13px;
+}
