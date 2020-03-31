@@ -78,6 +78,14 @@
   align-items: center;
   margin-right: 35px;
 }
+.suggestion .part1__icon,
+.suggestion .part2__icon,
+.suggestion .part3__icon {
+  background-color: #fae100;
+  padding: 10px 10px;
+  border-radius: 20%;
+  color: white;
+}
 
 .part1__text,
 .part2__text,
