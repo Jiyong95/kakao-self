@@ -1,5 +1,7 @@
 .chat {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f7f7f7;
 }
 .chat .chat__link {
   display: flex;

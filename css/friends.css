@@ -1,0 +1,103 @@
+.avatar {
+  width: 60px;
+  border-radius: 40%;
+}
+.plus__avatar,
+.friend__avatar {
+  width: 45px;
+  border-radius: 40%;
+}
+
+.friends .friends__me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.me__column1 {
+  display: flex;
+  align-items: center;
+}
+
+.me__column1 .me__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  padding-left: 13px;
+}
+
+.me__column1 .me__bottom-text {
+  font-size: 16px;
+  opacity: 0.4;
+  margin-top: 3px;
+}
+
+.me__column2,
+.friend__music {
+  border: 1px solid #5aad77;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.me__column2 i,
+.friend__music i {
+  font-size: 12px;
+}
+
+.friends__plus {
+  border-bottom: 1px solid #f7f7f7;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+}
+
+.friends__plus .plus__title,
+.friends__list .friends__title {
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+.plus,
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plus__column1,
+.friend__column1 {
+  display: flex;
+}
+
+.plus__text {
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  font-size: 18px;
+}
+
+.plus__column2 .plus__text {
+  opacity: 0.6;
+  font-size: 14px;
+}
+.plus__text i {
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+.friend__text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 13px;
+  font-size: 18px;
+}
+
+.friend__status {
+  font-size: 14px;
+  opacity: 0.4;
+  margin-top: 3px;
+}
