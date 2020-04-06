@@ -11,16 +11,97 @@
   padding: 0px 20px;
 }
 
-.chat-main {
-  background-image: url("../images/chatBg.png");
+.chat-body {
+  background-image: url("../images/chatBg2.png");
   min-height: 1000vh;
   /* view height 즉 보이는 것 1000%로 */
 }
-.chat-main .chat__timestamp {
+
+.chat-main .chat-screen {
+  padding-top: 10px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  opacity: 1;
+}
+
+.chat-main .chat__timestamp {
+  opacity: 0.7;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.in-message__avatar {
+  width: 50px;
+}
+.in-message {
+  display: flex;
+  margin-bottom: 40px;
+  align-self: flex-start;
+  /* align-self는 in-message에 해당되는 것. */
+  padding-left: 10px;
+  align-items: flex-start;
+  /* align-items는 in-message에 속하는 component. 
+  img와 div 2개가 수직을 기준으로 
+  flex-start는 위 div기준.
+  center는 img가 div두개의 가운데
+  flex-end는 아래 div기준.
+  */
+}
+
+.in-message .in-message__text {
+  width: 80%;
+  /* in-message 영역의 크기가 80% + chat-screen justify:center 
+  width로 div의 영역크기를 조절해주는 느낌.*/
+  padding-left: 14px;
+}
+
+.text__part1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.text__part2 .in-message__saying {
+  font-size: 20px;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  /* span태그여서 padding적용시키면 범위가 padding까지 확장되는 것이 아니라
+  범위는 text인데 밖으로 padding이 적용되는 것임.
+  그래서 범위를 padding까지 포함시키려면 display:block하면 됨. */
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.text__part2 {
+  position: relative;
+}
+
+.text__part2 .in-message__timestamp {
+  font-size: 10px;
+  position: absolute;
+  bottom: -8px;
+  margin-left: 4px;
+}
+
+.out-message {
+  position: relative;
+  align-self: flex-end;
+  padding-right: 10px;
+}
+
+.out-message__timestamp {
+  position: absolute;
+  font-size: 10px;
+  bottom: -2px;
+  left: -25px;
+}
+.out-message__saying {
+  font-size: 20px;
+  background-color: #ffea34;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  display: block;
 }
 
 .chat__write {
