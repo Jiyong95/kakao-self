@@ -13,35 +13,36 @@
     <title>chat-screen</title>
   </head>
   <body class="chat-body">
-    <div class="status-bar">
-      <div class="status-bar__column1">
-        <span class="status-bar__clock">13:53</span>
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column1">
+          <span class="status-bar__clock">13:53</span>
+        </div>
+        <div class="status-bar__column2">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column2">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+      <header class="header">
+        <div class="header__column1">
+          <a href="index.html" class="header__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">현태형</h1>
+        </div>
+        <div class="header__column2">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__column1">
-        <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-        <h1 class="header__title">현태형</h1>
-      </div>
-      <div class="header__column2">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-    </header>
-
     <main class="chat-main">
       <ul class="chat-screen">
         <span class="chat__timestamp">어제</span>
