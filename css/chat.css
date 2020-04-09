@@ -113,36 +113,57 @@
   display: block;
 }
 
-.chat__write {
+.chat__write--container {
   position: fixed;
-  bottom: 50px;
+  margin: 0 auto;
+  /* fixed된 component 가운데 정렬법. */
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fcfcfc;
-  padding: 10px;
+  width: 100%;
+}
+
+.write__column1 {
+  position: absolute;
+  left: 10px;
+}
+.write__column2 {
+  position: absolute;
+  right: 10px;
+}
+
+.chat__write {
+  margin: 0 auto;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 0;
+  padding: 20px 60px;
+  font-size: 14px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+/* transition은 
+전 - transition적용할것, 적용효과 와
+후(focus 등의 상태) - 적용할것의 다른 상태 기입. */
+.chat__write:focus {
+  outline: none;
+  width: 80%;
+  transform: translateY(-100px);
   border-radius: 40px;
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  /* fixed된 component 가운데 정렬법. */
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-
-  width: 80%;
 }
 
-.chat__write i {
-  font-size: 22px;
+.chat__icon {
+  font-size: 18px;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.write__input {
-  width: 80%;
-  padding: 5px;
-  border: none;
-  font-size: 14px;
+.chat__write:focus ~ .chat__icon {
+  opacity: 0;
 }
-
-.write__input:focus {
-  outline: none;
-}
+/* chat__write가 focus될 때 chat write다음 chat__icon클래스를 가리킴.
+chat__write클래스 전은 가리키지 못하고 다음부분을 가리킬 수 있기 때문에
+코드순서를 변경해준 것.
+*/
