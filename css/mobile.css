@@ -1,0 +1,25 @@
+.bigScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fce006;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.5;
+  /* 글자 줄 간격임. */
+  padding: 0px 60px;
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  .bigScreen {
+    display: flex;
+  }
+}
