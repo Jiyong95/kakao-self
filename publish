@@ -1,0 +1,19 @@
+git-hub으로 사이트 공유방법.
+
+1.Create Branch : gh-pages
+*이름은 꼭 gh-pages여야함.
+
+2.Publish branch해줌.
+
+3.https://jiyong95.github.io/kakao-self/
+사이트접속가능.
+
+
+이제 두개의 branch를 갖고 있음.
+두 branch는 공유 안 됨.
+
+*코드 수정시 
+branch master로 변경. + commit
+
+visual studio code 위의 branch에서 update from master
+
