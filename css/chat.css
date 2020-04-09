@@ -40,8 +40,17 @@
   font-weight: 700;
 }
 
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
 .in-message__avatar {
   width: 50px;
+  animation: spin 1s linear infinite;
 }
 .in-message {
   display: flex;

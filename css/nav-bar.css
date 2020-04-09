@@ -39,3 +39,22 @@ a태그의 범위는 i콘의 범위.*/
   border-radius: 50%;
   font-size: 13px;
 }
+
+@keyframes navin {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav {
+  transform: translateY(80px);
+  /* nav-bar가 안보인 상태에서 보이게 하려고 추가. */
+  animation: navin 0.5s ease-out forwards;
+  /* forwards는 to의 상태를 계속유지. */
+  animation-delay: 1s;
+}

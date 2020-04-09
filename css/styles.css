@@ -34,3 +34,18 @@ a {
   text-decoration: none;
   /* 링크 밑줄 없애줌. */
 }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+main {
+  animation: fadein 0.5s ease-in-out;
+}
