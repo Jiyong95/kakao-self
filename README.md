@@ -1,4 +1,6 @@
-# <a href="https://jiyong95.github.io/kakao-self/">사이트 주소</a>
+## <a href="https://jiyong95.github.io/kakao-self/">사이트 주소</a>
+
+## <a href="https://songeunjung92.tistory.com/48">gh-pages 사용법</a>
 
 # kakao-self
 
